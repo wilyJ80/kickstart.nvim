@@ -132,11 +132,13 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    -- Theme inspired by Breeze
+    'fneu/breezy',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'breezy'
+      vim.opt.termguicolors = true
+      vim.opt.background = "light"
     end,
   },
 
