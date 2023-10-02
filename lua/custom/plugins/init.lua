@@ -41,6 +41,10 @@ return {
 			post_hook = nil,
 			performance_mode = false,
 			opts = {}
+		},
+
+		{
+			'mfussenegger/nvim-jdtls'
 		}
 	}
 }
