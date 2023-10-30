@@ -133,11 +133,11 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Breeze
-    'fneu/breezy',
+    'catppuccin/nvim',
+    name = 'catppuccin',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'breezy'
+      vim.cmd.colorscheme 'catppuccin'
       vim.opt.termguicolors = true
       vim.opt.background = "light"
     end,
@@ -150,7 +150,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
