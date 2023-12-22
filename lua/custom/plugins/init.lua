@@ -45,6 +45,9 @@ return {
 
 		{
 			'mfussenegger/nvim-jdtls'
+		},
+		{
+			'norcalli/nvim-colorizer.lua'
 		}
 	}
 }
