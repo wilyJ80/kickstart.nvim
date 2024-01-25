@@ -133,17 +133,6 @@ require('lazy').setup({
   },
 
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'catppuccin'
-      vim.opt.termguicolors = true
-      vim.opt.background = "light"
-    end,
-  },
-
-  {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
@@ -222,6 +211,7 @@ vim.opt.shiftwidth = 4
 vim.opt.colorcolumn = "80"
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.background = "light"
 
 -- Set highlight on search
 vim.o.hlsearch = false
