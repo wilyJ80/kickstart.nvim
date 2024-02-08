@@ -208,7 +208,6 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.colorcolumn = "80"
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.background = "light"
