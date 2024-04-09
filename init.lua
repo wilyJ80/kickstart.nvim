@@ -210,7 +210,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.opt.background = "light"
+vim.opt.background = "dark"
 
 -- Set highlight on search
 vim.o.hlsearch = false
