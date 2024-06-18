@@ -103,7 +103,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
-vim.cmd.colorscheme 'vim'
+-- vim.cmd.colorscheme 'vim'
 
 -- Make line numbers default
 vim.opt.number = true
