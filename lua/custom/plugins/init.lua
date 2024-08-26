@@ -2,4 +2,33 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  {
+    'akinsho/toggleterm.nvim',
+    version = '*',
+    config = true,
+    opts = {
+      open_mapping = [[<F12>]],
+      direction = 'float',
+    },
+  },
+  {
+    'karb94/neoscroll.nvim',
+    mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>', '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+    hide_cursor = true,
+    stop_eof = true,
+    respect_scrollof = false,
+    cursos_scrolls_alone = true,
+    easing_function = nil,
+    pre_hook = nil,
+    post_hook = nil,
+    performance_mode = false,
+    opts = {},
+  },
+  {
+    'norcalli/nvim-colorizer.lua',
+  },
+  {
+    'nvim-java/nvim-java',
+  },
+}
