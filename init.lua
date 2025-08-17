@@ -475,6 +475,7 @@ require('lazy').setup({
       },
     },
   },
+
   {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
@@ -699,6 +700,8 @@ require('lazy').setup({
           },
         },
       }
+
+      require('lspconfig').jdtls.setup {}
 
       -- Ensure the servers and tools above are installed
       --
