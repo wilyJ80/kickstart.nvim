@@ -1,2 +1,3 @@
 - file picker
 - toggleterm
+- smooth scroll not necessary: neovide provides it
