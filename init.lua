@@ -97,6 +97,8 @@ vim.g.have_nerd_font = false
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 
 -- necessary for colorizer plugin
 vim.o.termguicolors = true
@@ -479,7 +481,7 @@ require('lazy').setup({
     },
   },
 
- {
+  {
     -- Main LSP Configuration
     'neovim/nvim-lspconfig',
     dependencies = {
