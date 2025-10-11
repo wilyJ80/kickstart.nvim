@@ -708,6 +708,13 @@ require('lazy').setup({
 
       require('java').setup()
       require('lspconfig').jdtls.setup {}
+      local pok, platformio = pcall(require, 'platformio')
+      if pok then
+        platformio.setup {
+          lsp = 'clangd',
+          menu_key = '<leader>\\', -- replace this menu key  to your convenience
+        }
+      end
 
       -- Ensure the servers and tools above are installed
       --
