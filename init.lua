@@ -1009,3 +1009,24 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 require('colorizer').setup()
+
+require('lspconfig').basedpyright.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  root_dir = find_pyproject_ancestor,
+  settings = {
+    basedpyright = {
+      analysis = {
+        autoImportCompletions = true,
+        diagnosticMode = 'workspace',
+        diagnosticSeverityOverrides = {
+          reportConstantRedefinition = false,
+          reportMissingTypeStubs = false,
+          reportUnknownVariableType = false,
+          reportUnusedParameter = false,
+        },
+        typeCheckingMode = 'off',
+      },
+    },
+  },
+}
